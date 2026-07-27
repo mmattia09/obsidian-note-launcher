@@ -50,7 +50,7 @@ Requires Obsidian **1.5.0+**. Works on desktop and mobile.
 
 ### Manual
 
-1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/mmattia09/note-launcher/releases/latest).
+1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/mmattia09/obsidian-note-launcher/releases/latest).
 2. Copy them to `<vault>/.obsidian/plugins/note-launcher/`.
 3. Reload Obsidian and enable **Note Launcher** in Settings → Community plugins.
 

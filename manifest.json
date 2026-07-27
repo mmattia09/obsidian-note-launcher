@@ -1,0 +1,10 @@
+{
+	"id": "note-launcher",
+	"name": "Note Launcher",
+	"version": "1.0.0",
+	"minAppVersion": "1.5.0",
+	"description": "Add your own ribbon buttons that create a note from a template in a chosen folder and open it.",
+	"author": "mmattia09",
+	"authorUrl": "https://github.com/mmattia09",
+	"isDesktopOnly": false
+}

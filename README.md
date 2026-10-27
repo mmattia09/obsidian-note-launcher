@@ -18,7 +18,7 @@ Configure as many buttons as you like. For each one you pick:
 | **If the note already exists** | Create a numbered copy, or open the existing note |
 | **Show in ribbon** / **Add a command** | Where the button is available |
 
-Buttons can be reordered, duplicated and deleted, and every button is also available from the command palette, so you can bind a hotkey to it.
+Settings are searchable in Obsidian’s settings search. Folder and template suggestions use Obsidian’s built-in controls. Buttons can be reordered, duplicated and deleted, and every button is also available from the command palette, so you can bind a hotkey to it.
 
 ## Placeholders
 
@@ -46,7 +46,7 @@ If [Templater](https://github.com/SilentVoid13/Templater) is installed, Note Lau
 
 ## Installation
 
-Requires Obsidian **1.5.0+**. Works on desktop and mobile.
+Requires Obsidian **1.13.0+**. Works on desktop and mobile.
 
 ### Manual
 
@@ -57,7 +57,8 @@ Requires Obsidian **1.5.0+**. Works on desktop and mobile.
 ### Building
 
 ```bash
-npm install
+npm ci
+npm run check # lint, regression tests, and production build
 npm run build   # produces main.js
 npm run dev     # build in watch mode
 ```
@@ -72,9 +73,14 @@ The interface follows the Obsidian language and is available in English, Italian
 - `src/settings.ts` — settings tab with the button editor.
 - `src/launcher.ts` — name resolution, placeholders, note creation.
 - `src/modals.ts` — icon picker and name prompt.
-- `src/suggest.ts` — folder and template autocompletion.
 - `src/i18n.ts` — translations.
 
 ## License
 
 MIT
+
+## Releases
+
+After merging a version bump, push a tag matching `manifest.json` (for example `1.0.1`). The release workflow checks version consistency, runs lint/tests, verifies two clean builds produce identical `main.js`, and attests `main.js`, `manifest.json`, and `styles.css`. It then creates a **draft** GitHub release with those exact files. Verify the draft before publishing it to trigger the community catalog scan.
+
+Use Node 22.23.4+, 24.22.1+, or 26.12.1+ within the supported release lines. CI uses Node 24.22.1. Install with `npm ci` to reproduce the locked build dependencies.

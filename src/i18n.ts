@@ -56,6 +56,7 @@ const en: Dict = {
 	"icon.title": "Choose an icon",
 	"notice.templateMissing": "Template not found: ",
 	"notice.createFailed": "Could not create the note: ",
+	"notice.saveFailed": "Could not save settings.",
 	"notice.noName": "The file name is empty.",
 };
 
@@ -113,6 +114,7 @@ const it: Dict = {
 	"icon.title": "Scegli un'icona",
 	"notice.templateMissing": "Template non trovato: ",
 	"notice.createFailed": "Impossibile creare la nota: ",
+	"notice.saveFailed": "Impossibile salvare le impostazioni.",
 	"notice.noName": "Il nome del file è vuoto.",
 };
 
@@ -169,6 +171,7 @@ const fr: Dict = {
 	"icon.title": "Choisir une icône",
 	"notice.templateMissing": "Modèle introuvable : ",
 	"notice.createFailed": "Impossible de créer la note : ",
+	"notice.saveFailed": "Impossible d’enregistrer les paramètres.",
 	"notice.noName": "Le nom du fichier est vide.",
 };
 
@@ -225,6 +228,7 @@ const de: Dict = {
 	"icon.title": "Symbol auswählen",
 	"notice.templateMissing": "Vorlage nicht gefunden: ",
 	"notice.createFailed": "Notiz konnte nicht erstellt werden: ",
+	"notice.saveFailed": "Die Einstellungen konnten nicht gespeichert werden.",
 	"notice.noName": "Der Dateiname ist leer.",
 };
 
@@ -281,6 +285,7 @@ const es: Dict = {
 	"icon.title": "Elegir un icono",
 	"notice.templateMissing": "Plantilla no encontrada: ",
 	"notice.createFailed": "No se pudo crear la nota: ",
+	"notice.saveFailed": "No se pudieron guardar los ajustes.",
 	"notice.noName": "El nombre del archivo está vacío.",
 };
 
